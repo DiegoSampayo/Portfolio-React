@@ -1,0 +1,62 @@
+header {
+    height: 50vh;
+    padding-top: 7rem;
+    overFlow: hidden;
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/*-------------CTA---------*/
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/*----Header Socials---------*/
+.header__socials {
+    size:0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 5rem;
+    
+}
+
+.header__socials::after {
+    content: "";
+    width: 0px;
+    height: 0rem;
+    background: var(--color-primary);
+}
+
+
+/*----Media Queries-Medium Devices-----*/
+
+@media screen and  (max-width: 1024px) {
+    header {
+        height: 68vh;
+    }
+    }
+
+
+/*----Media Queries-Small Devices-----*/
+
+@media screen and  (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .header__socials,
+    .scroll__down {
+        display: none;
+    }
+}
